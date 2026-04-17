@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: rgb(57, 55, 55);
+	color: #505050;
 }
 .container{
 	padding: 20px;
@@ -30,4 +30,35 @@ input{
 	border-radius: 10px;
 	width: 250px;
 	padding: 5px;
+}
+.content{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-top: 1px #D2D2D8 solid;
+	margin-bottom: 5px;
+}
+.content:last-child{
+	border-bottom: 1px rgb(192, 185, 185) solid;
+}
+.qr-code{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.qrImg{
+	width: 100px;
+	height: 100px;
+}
+.qrCodeContenet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2px;
+}
+footer{
+	border-top: 1px #F2AC1C solid;
 }
