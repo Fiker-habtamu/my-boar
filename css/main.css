@@ -16,6 +16,38 @@ img{
 	height: 100%;
 	object-fit: contain;
 }
+.main_contanier{
+	background-image: url("../assets/img/bg_logo.png");
+	background-repeat: no-repeat;
+	 background-position: right bottom;
+	background-size: 100px 100px;
+	position: relative;
+  /* Establishes a new stacking context for children */
+  isolation: isolate; 
+
+	
+	
+	background-position-x: center; 
+}
+.main_contanier::before {
+  content: "";
+  position: absolute;
+  /* Spans the pseudo-element across the entire parent */
+  inset: 0; 
+  
+  /* Background properties */
+  background-image: url("../assets/img/bankofabyssinia_logo.jpeg");
+  background-repeat:no-repeat;
+	background-size: contain;
+  background-position: center;
+  
+  /* Set your transparency here (0.0 to 1.0) */
+  opacity: 0.2; 
+  
+  /* Sends the background layer behind the text */
+  z-index: -1; 
+}
+
 label{
 	display: block;
 	padding: 20px;
