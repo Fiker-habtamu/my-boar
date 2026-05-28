@@ -34,7 +34,6 @@ input{
 .content{
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
 	border-top: 1px #D2D2D8 solid;
 	margin-bottom: 5px;
 }
