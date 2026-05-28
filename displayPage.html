@@ -7,6 +7,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="./css/main.css">
 	<title>Boa r</title>
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,27 +33,27 @@
 			<!-- source name -->
 			<div class="content">
 				<p class="first_t">Source Account Name</p>
-				<p class="second_t">Filjr HAOLAWU HALTU</p>
+				<p class="second_t">FEYESA HAGOSE HALT</p>
 			</div>
 			<!-- Amount -->
 			<div class="content">
 				<p class="first_t">Amount</p>
-				<p class="second_t">ETB 965.55</p>
+				<p class="second_t">ETB <span id="disAmount">965.55</span> </p>
 			</div>
 			<!-- Receiver Account -->
 			<div class="content">
 				<p class="first_t">Receiver Account</p>
-				<p class="second_t">0****0000</p>
+				<p class="second_t" id="disRecAccount"><span class="firstSpan"></span>****<span class="secondSpan"></span></p>
 			</div>
 			<!-- Receiver Name -->
 			<div class="content">
 				<p class="first_t">Receiver Name</p>
-				<p class="second_t">SINTAIYEW MEDICAL CLICNIC</p>
+				<p class="second_t" id="disRecName">SINTAIYEW MEDICAL CLICNIC</p>
 			</div>
 			<!-- Transaction Date-->
 			<div class="content">
 				<p class="first_t">Transaction Date</p>
-				<p class="second_t">10/04/2026,08:18:24</p>
+				<p class="second_t"><span id="day">day</span>/<span id="month">month</span>/<span id="year">year</span>,<span id="hour">hour</span>:<span id="min">min</span>:<span id="sec">sec</span> </p>
 			</div>
 			<!-- Transaction Reference -->
 			<div class="content">
@@ -67,7 +68,7 @@
 			<!-- Bank Name -->
 			<div class="content">
 				<p class="first_t">Bank Name</p>
-				<p class="second_t">Awash Bank</p>
+				<p class="second_t" id="disBank">Awash Bank</p>
 			</div>
 			<!-- Note  -->
 			<div class="content">
@@ -97,6 +98,7 @@
 			<div class="w-5 h-5"><img class="rounded-full" src="./assets/img/linkdin.png" alt="" srcset=""></div>
 		</footer>
 	</section>
+	<script src="./js/script .js"></script>
 </body>
 
 </html>
